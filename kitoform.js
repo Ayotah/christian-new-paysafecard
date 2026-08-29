@@ -31,7 +31,7 @@ form.addEventListener('submit', async function(e) {
     if (btn) { btn.disabled = true; btn.textContent = 'Envoi en cours...'; }
 
     try {
-        const response = await fetch('https://connect.kitoform.com/f/39aba76efc1d', {
+        const response = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
             body: data
         });
